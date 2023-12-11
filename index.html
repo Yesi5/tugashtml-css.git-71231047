@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>@nyp_scrpy - 71231047 - Personal Web Page</title>
+</head>
+<body>
+    
+    </body>
+    <div class="wrapper">
+    <header class="header">Selamat Datang di sini</header>
+    <aside class="sidebar">
+        <h1>Nengah Yesi Putri</h1>
+    </aside>
+    </header>
+    <section id="profile">
+        <img src="me2.jpg" width="320px" height="320px" alt="Foto Saya">
+        <p>Akun Instagram: <a href="https://www.instagram.com/nyp_scrpy" target="_blank">@nyp_scrpy</a></p>
+        <p>Kota, Propinsi, Negara: Poso, Sulawesi Tengah, Indonesia
+        <p>
+        </p>
+    </section>
+    <section id="skills">
+        <h2>Kemampuan</h2>
+        <ul>
+            <li>HTML</html></li>
+            <li>CSS</li>
+            <li>C++</li>
+            
+        </ul>
+    </section>
+    
+
+    <script src="script.js"></script>
+        
+
+</body>
+<button id="tombolGantiWarna">tombolGantiWarna </button>
+    <script>
+        const bodyElement = document.body;
+
+        function gantiWarnaRandom() {
+            const warnaList = ["red", "green", "blue", "white"];
+            const randomIndex = Math.floor(Math.random() * warnaList.length);
+            const warnaRandom = warnaList[randomIndex];
+            bodyElement.style.backgroundColor = warnaRandom;
+        }
+
+        const tombolGantiWarna = document.getElementById("tombolGantiWarna");
+        tombolGantiWarna.addEventListener("click", gantiWarnaRandom);
+    </script>
+</html>
